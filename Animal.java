@@ -10,13 +10,14 @@ public abstract class Animal
 {
     // Whether the animal is alive or not.
     private boolean alive;
+    
     // The animal's field.
     private Field field;
     // The animal's position in the field.
     private Location location;
-    
+   
     // The animals age
-    private int age;
+    public int age;
     
     /**
      * Create a new animal at location in field.
@@ -24,10 +25,12 @@ public abstract class Animal
      * @param field The field currently occupied.
      * @param location The location within the field.
      */
-    public Animal()
+    public Animal(Field field, Location location)
     {
-        age = 0;
         alive = true;
+        age = 0;
+        this.field = field;
+        setLocation(location);
     }
     
     /**
@@ -37,6 +40,11 @@ public abstract class Animal
     {
         return age;
     }        
+    
+    public void setAge(int age)
+    {
+        this.age = age;
+    }
     
     /**
      * Make this animal act - that is: make it do

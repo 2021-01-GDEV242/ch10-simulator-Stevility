@@ -25,8 +25,6 @@ public class Rabbit extends Animal
     
     // Individual characteristics (instance fields).
     
-    // The rabbit's age.
-    
 
     /**
      * Create a new rabbit. A rabbit may be created with age
@@ -39,9 +37,9 @@ public class Rabbit extends Animal
     public Rabbit(boolean randomAge, Field field, Location location)
     {
         super(field, location);
-        age = 0;
-        if(randomAge) {
-            age = rand.nextInt(MAX_AGE);
+        if(randomAge) 
+        {
+            setAge (rand.nextInt(MAX_AGE));
         }
     }
     
