@@ -46,6 +46,12 @@ public abstract class Animal
         this.age = age;
     }
     
+    public boolean canBreed()
+    {
+        return getAge() >= getBreedingAge();
+    }
+    abstract public int getBreedingAge();
+    
     /**
      * Make this animal act - that is: make it do
      * whatever it wants/needs to do.
