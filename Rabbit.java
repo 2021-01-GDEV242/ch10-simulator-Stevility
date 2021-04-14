@@ -26,7 +26,7 @@ public class Rabbit extends Animal
     // Individual characteristics (instance fields).
     
     // The rabbit's age.
-    private int age;
+    
 
     /**
      * Create a new rabbit. A rabbit may be created with age
