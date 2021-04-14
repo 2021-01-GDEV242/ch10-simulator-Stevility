@@ -55,6 +55,16 @@ public abstract class Animal
     }
     abstract public int getBreedingAge();
     
+    protected void incrementAge()
+    {
+        age++;
+        if(age >getMaxAge())
+        {
+            setDead();
+        }
+    }
+    abstract public int getMaxAge();
+    
     /**
      * Make this animal act - that is: make it do
      * whatever it wants/needs to do.

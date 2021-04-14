@@ -83,17 +83,6 @@ public class Fox extends Animal
             }
         }
     }
-
-    /**
-     * Increase the age. This could result in the fox's death.
-     */
-    private void incrementAge()
-    {
-        age++;
-        if(age > MAX_AGE) {
-            setDead();
-        }
-    }
     
     /**
      * Make this fox more hungry. This could result in the fox's death.
@@ -167,5 +156,10 @@ public class Fox extends Animal
     public int getBreedingAge()
     {
         return BREEDING_AGE;
+    }
+    
+    public int getMaxAge()
+    {
+        return MAX_AGE;
     }
 }
