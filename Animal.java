@@ -46,6 +46,9 @@ public abstract class Animal
         this.age = age;
     }
     
+    /**
+     * Lets rabbits and the fox to breed
+     */
     public boolean canBreed()
     {
         return getAge() >= getBreedingAge();
